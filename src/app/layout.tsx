@@ -3,7 +3,7 @@ import { AudioToggle } from "@/components/layout/audio-toggle";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { manrope, playfair } from "@/lib/fonts";
-import { memberships, site } from "@/lib/site-data";
+import { memberships, site, teacher } from "@/lib/site-data";
 import { siteUrl } from "@/lib/site-url";
 import "./globals.css";
 
@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     "baile de salón",
     "Jardines Club Hípico",
     "Salón de los Espejos",
+    "Adriana Mejía maestra de baile",
   ],
   applicationName: "JCH Baile",
   authors: [{ name: "Jardines Club Hípico" }],
@@ -64,7 +65,7 @@ const danceSchoolSchema = {
   url: siteUrl,
   telephone: site.phone,
   email: site.email,
-  image: `${siteUrl}/images/salon-amplio.webp`,
+  image: `${siteUrl}/images/adriana-danzon-2024.webp`,
   logo: `${siteUrl}/images/jch-logo.png`,
   parentOrganization: {
     "@type": "Organization",
@@ -81,6 +82,11 @@ const danceSchoolSchema = {
   },
   areaServed: ["Xochimilco", "Ciudad de México"],
   priceRange: "$80–$800 MXN",
+  employee: {
+    "@type": "Person",
+    name: teacher.name,
+    jobTitle: teacher.role,
+  },
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Membresías mensuales de baile",

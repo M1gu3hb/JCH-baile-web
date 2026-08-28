@@ -14,12 +14,21 @@ export const site = {
 
 export const navigation = [
   { href: "/", label: "Inicio" },
+  { href: "/maestra", label: "Tu maestra" },
   { href: "/ritmos", label: "Ritmos" },
   { href: "/membresias", label: "Membresías" },
   { href: "/salon", label: "El salón" },
   { href: "/preguntas", label: "Preguntas" },
   { href: "/contacto", label: "Contacto" },
 ] as const;
+
+export const teacher = {
+  name: "Adriana Mejía",
+  role: "Maestra de baile",
+  introduction:
+    "Adriana Mejía será la profesora de las nuevas clases de JCH Baile. Su material documenta trabajo real en baile de salón, danzón, montajes escénicos y presentaciones con grupos de distintas edades.",
+  specialties: ["Baile de salón", "Danzón", "Montaje escénico", "Trabajo grupal"],
+} as const;
 
 export const rhythms = [
   {
@@ -121,7 +130,7 @@ export const faqs = [
   {
     question: "¿Necesito saber bailar?",
     answer:
-      "No. Las clases están pensadas para empezar desde cero y avanzar de forma progresiva. Si ya tienes experiencia, el profesor podrá ubicarte en el grupo que mejor te convenga cuando se publiquen los horarios.",
+      "No. Las clases están pensadas para empezar desde cero y avanzar de forma progresiva. Si ya tienes experiencia, Adriana podrá orientarte hacia el grupo que mejor te convenga cuando se publiquen los horarios.",
   },
   {
     question: "¿Tengo que ir con pareja?",
@@ -150,36 +159,26 @@ export const faqs = [
   },
 ] as const;
 
-export const venuePhotos = [
+export const teacherPhotos = [
   {
-    src: "/images/salon-amplio.webp",
-    alt: "Vista amplia y luminosa del Salón de los Espejos",
-    label: "Pista amplia",
+    src: "/images/adriana-danzon-2024.webp",
+    alt: "Adriana Mejía durante una presentación de danzón",
+    label: "Danzón en escena",
   },
   {
-    src: "/images/salon-entrada.webp",
-    alt: "Entrada iluminada del Salón de los Espejos",
-    label: "Acceso principal",
+    src: "/images/adriana-archivo-danza.webp",
+    alt: "Fotografía histórica de una presentación de danza tradicional",
+    label: "Archivo de danza",
   },
   {
-    src: "/images/salon-luces.webp",
-    alt: "Salón de los Espejos con iluminación de colores",
-    label: "Iluminación ambiental",
+    src: "/images/adriana-grupo-infantil.webp",
+    alt: "Adriana Mejía con un grupo infantil después de una presentación",
+    label: "Trabajo con grupos",
   },
   {
-    src: "/images/salon-noche.webp",
-    alt: "Zona lounge del Salón de los Espejos con luz morada",
-    label: "Ambiente nocturno",
-  },
-  {
-    src: "/images/salon-montaje.webp",
-    alt: "Salón de los Espejos preparado para un evento",
-    label: "Espacio real",
-  },
-  {
-    src: "/images/salon-lounge.webp",
-    alt: "Área lounge junto a la pista del Salón de los Espejos",
-    label: "Áreas de descanso",
+    src: "/images/adriana-vale-bailar.webp",
+    alt: "Adriana Mejía y su pareja en un encuentro dedicado al danzón",
+    label: "Encuentros de danzón",
   },
 ] as const;
 

@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import { ArrowUpRight, LampCeiling, MapPin, Music2, PanelsTopLeft } from "lucide-react";
-import Image from "next/image";
 import { Reveal } from "@/components/animation/reveal";
 import { CtaBand } from "@/components/sections/cta-band";
 import { InnerPageHero } from "@/components/sections/inner-page-hero";
-import { VenueGallery } from "@/components/sections/venue-gallery";
+import { VenueSchematic } from "@/components/sections/venue-schematic";
 import { site } from "@/lib/site-data";
 
 export const metadata: Metadata = {
@@ -26,15 +25,8 @@ export default function SalonPage() {
       />
 
       <section className="venue-hero section-shell section-shell--wide">
-        <Reveal className="venue-hero__image">
-          <Image
-            src="/images/salon-entrada.webp"
-            alt="Acceso e interior del Salón de los Espejos"
-            fill
-            priority
-            sizes="(max-width: 800px) 92vw, 88vw"
-          />
-          <span>Jardines Club Hípico · Santa Inés</span>
+        <Reveal className="venue-hero__schematic" amount={0.08}>
+          <VenueSchematic />
         </Reveal>
         <Reveal className="venue-hero__copy">
           <span className="eyebrow">Salón de los Espejos</span>
@@ -63,15 +55,29 @@ export default function SalonPage() {
         ))}
       </section>
 
-      <section className="gallery-section section-shell section-shell--wide">
-        <Reveal className="gallery-section__heading">
+      <section className="venue-use section-shell section-shell--wide">
+        <Reveal className="venue-use__heading">
           <div>
-            <span className="eyebrow">El lugar, sin renders</span>
-            <h2>Fotos reales del <em>Salón de los Espejos.</em></h2>
+            <span className="eyebrow">La pista se prepara para aprender</span>
+            <h2>Menos montaje. <em>Más espacio para moverte.</em></h2>
           </div>
-          <p>La distribución para clases será más limpia que un montaje de evento; las fotos muestran el espacio y su iluminación reales.</p>
+          <p>Para las clases, el salón se organizará alrededor de la práctica: vista clara a la maestra, circulación cómoda y espacio para trabajar en pareja o grupo.</p>
         </Reveal>
-        <VenueGallery />
+        <div className="venue-use__steps">
+          {[
+            ["01", "Demostración", "Adriana explica el paso desde un punto visible para todo el grupo."],
+            ["02", "Práctica guiada", "La pista se divide de forma flexible para practicar base, vueltas y conexión."],
+            ["03", "Baile completo", "La sesión cierra aplicando lo aprendido dentro de una canción."],
+          ].map(([number, title, text]) => (
+            <Reveal key={number}>
+              <article>
+                <span>{number}</span>
+                <h3>{title}</h3>
+                <p>{text}</p>
+              </article>
+            </Reveal>
+          ))}
+        </div>
       </section>
 
       <section className="location-card section-shell">
@@ -95,4 +101,3 @@ export default function SalonPage() {
     </>
   );
 }
-

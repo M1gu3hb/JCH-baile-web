@@ -6,9 +6,10 @@ import { SpotlightCard } from "@/components/animation/spotlight-card";
 import { CtaBand } from "@/components/sections/cta-band";
 import { FaqAccordion } from "@/components/sections/faq-accordion";
 import { HomeHero } from "@/components/sections/home-hero";
+import { InstructorPreview } from "@/components/sections/instructor-preview";
 import { MembershipCard } from "@/components/sections/membership-card";
 import { SectionHeading } from "@/components/sections/section-heading";
-import { VenueGallery } from "@/components/sections/venue-gallery";
+import { VenueSchematic } from "@/components/sections/venue-schematic";
 import { faqs, memberships, rhythms } from "@/lib/site-data";
 
 export default function HomePage() {
@@ -61,6 +62,8 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+
+      <InstructorPreview />
 
       <section className="rhythm-preview section-shell section-shell--wide">
         <Reveal>
@@ -119,7 +122,7 @@ export default function HomePage() {
             </Link>
           </div>
         </Reveal>
-        <VenueGallery compact />
+        <VenueSchematic compact />
       </section>
 
       <section className="faq-preview section-shell">

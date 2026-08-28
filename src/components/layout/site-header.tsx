@@ -37,7 +37,7 @@ export function SiteHeader() {
         </Link>
 
         <nav className="desktop-nav" aria-label="Navegación principal">
-          {navigation.slice(1, 5).map((item) => (
+          {navigation.slice(1, 6).map((item) => (
             <Link key={item.href} href={item.href} className={pathname === item.href ? "is-active" : ""}>
               {item.label}
             </Link>

@@ -4,12 +4,14 @@ Sitio oficial para las clases de baile de Jardines Club Hípico en el Salón de 
 
 ## Experiencia
 
-- Sitio multipágina: inicio, ritmos, membresías, salón, preguntas y contacto.
+- Sitio multipágina: inicio, maestra, ritmos, membresías, salón, preguntas y contacto.
 - Dirección visual editorial, responsive y orientada a conversión.
 - Animaciones de entrada, desplazamiento, transiciones y estados interactivos.
 - Ritmo latino original generado en el navegador y activado únicamente por el visitante.
 - SEO técnico con metadatos, Open Graph, datos estructurados, sitemap y robots.
-- Fotografías y logotipo del repositorio oficial de Jardines Club Hípico.
+- Página dedicada a Adriana Mejía con fotografías restauradas a partir de su archivo real.
+- Reel web, sin audio, compuesto únicamente con fragmentos de los cinco videos que compartió la maestra.
+- Logotipo del repositorio oficial de Jardines Club Hípico.
 
 ## Oferta publicada
 

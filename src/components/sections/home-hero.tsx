@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useMotionValue, useReducedMotion, useSpring, useTransform } from "motion/react";
-import { ArrowDown, ArrowUpRight, MapPin } from "lucide-react";
+import { ArrowDown, ArrowUpRight, UserRound } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { BlurText } from "@/components/animation/blur-text";
@@ -33,15 +33,15 @@ export function HomeHero() {
 
       <motion.div className="home-hero__photo" style={reduceMotion ? undefined : { x: imageX, y: imageY }}>
         <Image
-          src="/images/salon-amplio.webp"
-          alt="Pista amplia del Salón de los Espejos, sede de las clases"
+          src="/images/adriana-danzon-2024.webp"
+          alt="Adriana Mejía, maestra de las clases de baile, durante una presentación de danzón"
           fill
           priority
           sizes="(max-width: 900px) 88vw, 48vw"
         />
         <div className="home-hero__photo-overlay" />
         <span className="home-hero__photo-label">
-          <MapPin size={13} aria-hidden="true" /> Salón de los Espejos
+          <UserRound size={13} aria-hidden="true" /> Adriana Mejía · Tu maestra
         </span>
       </motion.div>
 
@@ -68,8 +68,8 @@ export function HomeHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7, duration: 0.7 }}
         >
-          Salsa, bachata, cumbia y ritmos de salón en una pista real. Empieza desde cero,
-          aprende con técnica y sal bailando de verdad.
+          Salsa, bachata, cumbia y ritmos de salón con la maestra Adriana Mejía. Empieza
+          desde cero, aprende con técnica y sal bailando de verdad.
         </motion.p>
 
         <motion.div
@@ -107,4 +107,3 @@ export function HomeHero() {
     </section>
   );
 }
-

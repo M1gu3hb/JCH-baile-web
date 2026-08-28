@@ -59,10 +59,15 @@ export default function ContactoPage() {
         </div>
 
         <Reveal className="contact-grid__visual">
-          <Image src="/images/salon-noche.webp" alt="Salón de los Espejos con iluminación morada" fill sizes="(max-width: 900px) 92vw, 48vw" />
+          <Image
+            src="/images/adriana-danzon-2024.webp"
+            alt="Adriana Mejía, maestra de las clases de baile"
+            fill
+            sizes="(max-width: 900px) 92vw, 48vw"
+          />
           <div>
-            <span>Salón de los Espejos</span>
-            <strong>Santa Inés · Xochimilco</strong>
+            <span>Tu maestra</span>
+            <strong>Adriana Mejía</strong>
           </div>
         </Reveal>
       </section>
@@ -78,4 +83,3 @@ export default function ContactoPage() {
     </>
   );
 }
-

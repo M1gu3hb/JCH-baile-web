@@ -71,10 +71,10 @@ export default function MembresiasPage() {
           </div>
           {memberships.map((membership) => (
             <div className="comparison-table__row" role="row" key={membership.id}>
-              <strong role="cell">{membership.name}</strong>
-              <span role="cell">{membership.classes} al mes</span>
-              <span role="cell">{membership.frequency}</span>
-              <span role="cell">{membership.perClass.replace(" por clase", "")}</span>
+              <strong role="cell" data-label="Plan">{membership.name}</strong>
+              <span role="cell" data-label="Clases">{membership.classes} al mes</span>
+              <span role="cell" data-label="Frecuencia">{membership.frequency}</span>
+              <span role="cell" data-label="Costo por clase">{membership.perClass.replace(" por clase", "")}</span>
             </div>
           ))}
         </div>
@@ -103,4 +103,3 @@ export default function MembresiasPage() {
     </>
   );
 }
-
